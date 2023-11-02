@@ -10,11 +10,11 @@ class quiz : AppCompatActivity() {
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_quiz_starting)
 
         val startButton:Button=findViewById(R.id.start)
         startButton.setOnClickListener {
-            val intent= Intent(this, ques1::class.java)
+            val intent= Intent(this, Ques_1::class.java)
             intent.putExtra("percent", precent)
             startActivity(intent)
 

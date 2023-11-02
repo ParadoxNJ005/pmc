@@ -13,7 +13,7 @@ class Ques_1 : AppCompatActivity() {
 
         val startButton: Button =findViewById(R.id.n1)
         startButton.setOnClickListener {
-            val intent= Intent(this, ques2::class.java)
+            val intent= Intent(this, Ques_2::class.java)
             startActivity(intent)
         }
         val o1:Button=findViewById(R.id.q1o1)

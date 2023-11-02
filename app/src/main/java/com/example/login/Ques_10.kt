@@ -12,12 +12,7 @@ class Ques_10 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ques10)
 
-        val startButton: Button =findViewById(R.id.n2)
-        startButton.setOnClickListener {
-            val intent= Intent(this, ques4::class.java)
-            startActivity(intent)
-        }
-
+        
         val o1:Button=findViewById(R.id.q2o1)
         val o2:Button=findViewById(R.id.q2o2)
         val o3:Button=findViewById(R.id.q2o3)
