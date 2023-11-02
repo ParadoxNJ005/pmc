@@ -13,10 +13,37 @@
         android:theme="@style/Theme.Login"
         tools:targetApi="31">
         <activity
-            android:name=".quiz_starting"
+            android:name=".Ques_10"
             android:exported="false" />
         <activity
-            android:name=".Quiz_opening"
+            android:name=".Ques_9"
+            android:exported="false" />
+        <activity
+            android:name=".Ques_8"
+            android:exported="false" />
+        <activity
+            android:name=".Ques_7"
+            android:exported="false" />
+        <activity
+            android:name=".Ques_6"
+            android:exported="false" />
+        <activity
+            android:name=".Ques_5"
+            android:exported="false" />
+        <activity
+            android:name=".Ques_4"
+            android:exported="false" />
+        <activity
+            android:name=".Ques_3"
+            android:exported="false" />
+        <activity
+            android:name=".Ques_2"
+            android:exported="false" />
+        <activity
+            android:name=".Ques_1"
+            android:exported="false" />
+        <activity
+            android:name=".quiz"
             android:exported="false" />
         <activity
             android:name=".Grish"
