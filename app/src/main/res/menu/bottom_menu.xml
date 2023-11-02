@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/BOTTOM_Home"
+        android:title="Home"
+        android:icon="@drawable/sharp_home_24"/>
+    <item
+        android:id="@+id/BOTTOM_Profile"
+        android:title="Profile"
+        android:icon="@drawable/sharp_person_24"/>
+
+
+    <item
+        android:id="@+id/BOTTOM_Message"
+        android:title="Message"
+        android:icon="@drawable/sharp_message_24"/>
+    <item
+        android:id="@+id/BOTTOM_Notification"
+        android:title="Notification"
+        android:icon="@drawable/sharp_notifications_active_24"/>
+</menu>
