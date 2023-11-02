@@ -13,7 +13,7 @@
         android:theme="@style/Theme.Login"
         tools:targetApi="31">
         <activity
-            android:name=".Grish"
+            android:name=".Toolnav"
             android:exported="false" />
         <activity
             android:name=".upload"

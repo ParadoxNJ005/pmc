@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">login</string>
+    <string name="Nav_Open">Open Navigation Drawer</string>
+    <string name="Nav_Close">Close Navigation Drawer</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="message">Message</string>
+    <string name="notification">Notification</string>
 </resources>
