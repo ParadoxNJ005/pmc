@@ -46,6 +46,10 @@
             android:name=".quiz"
             android:exported="false" />
         <activity
+        <activity
+            android:name=".imageswipe"
+            android:exported="false" />
+        <activity
             android:name=".Grish"
             android:exported="false" />
         <activity
