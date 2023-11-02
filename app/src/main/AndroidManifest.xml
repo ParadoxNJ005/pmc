@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Login"
         tools:targetApi="31">
         <activity
+            android:name=".quiz_starting"
+            android:exported="false" />
+        <activity
+            android:name=".Quiz_opening"
+            android:exported="false" />
+        <activity
             android:name=".Grish"
             android:exported="false" />
         <activity
