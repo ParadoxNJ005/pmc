@@ -16,6 +16,45 @@
             android:name=".Toolnav"
             android:exported="false" />
         <activity
+            android:name=".Ques_10"
+            android:exported="false" />
+        <activity
+            android:name=".Ques_9"
+            android:exported="false" />
+        <activity
+            android:name=".Ques_8"
+            android:exported="false" />
+        <activity
+            android:name=".Ques_7"
+            android:exported="false" />
+        <activity
+            android:name=".Ques_6"
+            android:exported="false" />
+        <activity
+            android:name=".Ques_5"
+            android:exported="false" />
+        <activity
+            android:name=".Ques_4"
+            android:exported="false" />
+        <activity
+            android:name=".Ques_3"
+            android:exported="false" />
+        <activity
+            android:name=".Ques_2"
+            android:exported="false" />
+        <activity
+            android:name=".Ques_1"
+            android:exported="false" />
+        <activity
+            android:name=".quiz"
+            android:exported="false" />
+        <activity
+            android:name=".imageswipe"
+            android:exported="false" />
+        <activity
+            android:name=".Grish"
+            android:exported="false" />
+        <activity
             android:name=".upload"
             android:exported="false" />
         <activity
