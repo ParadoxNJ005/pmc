@@ -52,5 +52,6 @@ dependencies {
     implementation ("com.github.yuyakaido:CardStackView:v2.3.4")
     implementation ("androidx.appcompat:appcompat:1.3.1")
     implementation ("androidx.drawerlayout:drawerlayout:1.1.1")
+    implementation ("com.airbnb.android:lottie-compose:6.1.0")
 
 }
