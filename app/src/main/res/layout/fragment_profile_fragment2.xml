@@ -1,17 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Profile_fragment">
 
-    <TextView
 
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:id="@+id/BOTTOM_Home"
+            android:title="Home"
+            android:icon="@drawable/sharp_home_24"
+            android:layout_width="wrap_content" />
+        <item
+            android:id="@+id/BOTTOM_Profile"
+            android:title="Profile"
+            android:icon="@drawable/sharp_person_24"/>
+
+
+        <item
+            android:id="@+id/BOTTOM_Message"
+            android:title="Message"
+            android:icon="@drawable/sharp_message_24"/>
+        <item
+            android:id="@+id/BOTTOM_Notification"
+            android:title="Notification"
+            android:icon="@drawable/sharp_notifications_active_24"/>
+    </menu>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="147dp"
+        android:src="@drawable/profile" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/round_add_circle_24"
+        android:layout_marginTop="80dp"
+        />
+
+    <TextView
+        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Profile"
-        android:layout_gravity="center"
-        android:textSize="36sp"
-        android:textColor="@color/red"/>
+        android:text="Name"
+        android:textSize="45dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="140dp"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="bio"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_marginTop="240dp"
+        android:layout_marginLeft="45dp"/>
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/edit_draw_svgrepo_com"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="340dp"/>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Looking for a reason to delete this app, and hopefully, you’re it!"
+        android:layout_marginTop="265dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        />
+
 
 </FrameLayout>

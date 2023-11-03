@@ -10,10 +10,19 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Login"
+        android:theme="@style/Base.Theme.Login"
         tools:targetApi="31">
+<!--        <activity-->
+<!--            android:name=".imageswipe"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".Toolnav"
+            android:exported="false" />
+        <activity
+            android:name=".test"
+            android:exported="false" />
+        <activity
+            android:name=".Imageswipe"
             android:exported="false" />
         <activity
             android:name=".Ques_10"
@@ -51,9 +60,7 @@
         <activity
             android:name=".imageswipe"
             android:exported="false" />
-        <activity
-            android:name=".Grish"
-            android:exported="false" />
+
         <activity
             android:name=".upload"
             android:exported="false" />
