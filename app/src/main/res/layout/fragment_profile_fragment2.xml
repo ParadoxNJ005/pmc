@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -34,12 +35,21 @@
         android:id="@+id/imageView5"
         android:layout_width="match_parent"
         android:layout_height="147dp"
-        android:src="@drawable/profile" />
+        android:src="@drawable/backimage1" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="140dp"
         android:layout_height="140dp"
+        android:src="@drawable/circle"
+        android:layout_marginTop="80dp"
+        />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerInParent="true"
         android:src="@drawable/round_add_circle_24"
         android:layout_marginTop="80dp"
         />
@@ -62,7 +72,8 @@
         android:textStyle="bold"
         android:textAllCaps="true"
         android:layout_marginTop="240dp"
-        android:layout_marginLeft="45dp"/>
+        android:layout_marginLeft="45dp"
+        />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -76,11 +87,17 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=" Looking for a reason to delete this app, and hopefully, you’re it!"
+        android:text="Buddy is a gentleman who loves adults, children and mixing with other dogs. Buddy has lived his life in rental apartments and units. As such, must be walked at least twice a day. He won't even pee in the front garden as he sees it as an extension of is lounge room"
         android:layout_marginTop="265dp"
         android:layout_marginLeft="35dp"
         android:layout_marginRight="35dp"
         />
+
+
+
+
+
+
 
 
 </FrameLayout>
