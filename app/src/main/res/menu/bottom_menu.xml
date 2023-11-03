@@ -15,7 +15,7 @@
         android:title="Message"
         android:icon="@drawable/sharp_message_24"/>
     <item
-        android:id="@+id/BOTTOM_Notification"
-        android:title="Notification"
-        android:icon="@drawable/sharp_notifications_active_24"/>
+        android:id="@+id/BOTTOM_Quiz"
+        android:title="Quiz"
+        android:icon="@drawable/quiz_icon"/>
 </menu>
