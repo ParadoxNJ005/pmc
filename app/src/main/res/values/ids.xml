@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="breedTextView" type="id" />
+    <item name="ageTextView" type="id" />
+    <item name="genderTextView" type="id" />
+    <item name="nameTextView" type="id" />
+    <item name="cityTextView" type="id" />
+    <item name="numTextView" type="id" />
+    <item name="bioTextView" type="id" />
+    <item name="emailTextView" type="id" />
+</resources>
