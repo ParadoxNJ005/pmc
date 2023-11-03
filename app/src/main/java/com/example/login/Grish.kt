@@ -11,7 +11,23 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
 import com.example.login.databinding.ActivityMainBinding
 import com.google.android.material.navigation.NavigationView
+import androidx.appcompat.widget.Toolbar
+import androidx.drawerlayout.widget.DrawerLayout
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
+
+val ActivityMainBinding.toolbar: Toolbar
+    get() = this.toolbar
+
+// Extension property for DrawerLayout
+val ActivityMainBinding.drawerLayout: DrawerLayout
+    get() = this.drawerLayout
+val ActivityMainBinding.bottomNavigation: BottomNavigationView
+    get() = this.bottomNavigation
+
+// Extension property for NavigationView
+val ActivityMainBinding.navigationDrawer: NavigationView
+    get() = this.navigationDrawer
 
 class Toolnav : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
     private lateinit var fragmentManager: FragmentManager
@@ -45,6 +61,7 @@ class Toolnav : AppCompatActivity(), NavigationView.OnNavigationItemSelectedList
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
+
         when(item.itemId){
             R.id.nav_prime-> openFragment(Prime_fragment())
             R.id.nav_settings-> openFragment(Settings_fragment())
