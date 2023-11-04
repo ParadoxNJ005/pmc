@@ -3,12 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home_fragment">
+    tools:context=".Homefragment">
 
     <com.yuyakaido.android.cardstackview.CardStackView
-        android:id="@+id/cardStackView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_centerInParent="true"/>
+        android:id="@+id/cardStackView"
+        android:layout_canterInParent="true"
+        tools:listitem="@layout/item_user_layout"/>
+
+
 
 </FrameLayout>

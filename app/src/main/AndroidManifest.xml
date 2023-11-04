@@ -12,9 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.Login"
         tools:targetApi="31">
-<!--        <activity-->
-<!--            android:name=".imageswipe"-->
-<!--            android:exported="false" />-->
+        <activity
+            android:name=".p3"
+            android:exported="false" />
+        <activity
+            android:name=".p2"
+            android:exported="false" />
+        <activity
+            android:name=".P1"
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".imageswipe" -->
+        <!-- android:exported="false" /> -->
         <activity
             android:name=".Toolnav"
             android:exported="false" />
@@ -60,7 +68,6 @@
         <activity
             android:name=".imageswipe"
             android:exported="false" />
-
         <activity
             android:name=".upload"
             android:exported="false" />
