@@ -55,7 +55,7 @@ class Profile_fragment : Fragment() {
         val genderTextView = view.findViewById<TextView>(R.id.genderTextView)
         val nameTextView = view.findViewById<TextView>(R.id.nameTextView)
         val cityTextView = view.findViewById<TextView>(R.id.cityTextView)
-        val numTextView = view.findViewById<TextView>(R.id.numTextView)
+        val numTextView = view.findViewById<TextView>(R.id.numberTextView)
         val emailTextView = view.findViewById<TextView>(R.id.emailTextView)
         val bioTextView = view.findViewById<TextView>(R.id.bioTextView)
         // ... (similarly for other views)
@@ -93,4 +93,4 @@ class Profile_fragment : Fragment() {
 
     }
     }
-}
+

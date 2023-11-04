@@ -20,8 +20,12 @@ import com.yuyakaido.android.cardstackview.CardStackListener
 import com.yuyakaido.android.cardstackview.Direction
 
 
+
+
+
 class Homefragment : Fragment() {
 
+    private lateinit var databaseReference:DatabaseReference
     private lateinit var binding : FragmentHomeFragmentBinding
     private lateinit var manager : CardStackLayoutManager
     override fun onCreateView(

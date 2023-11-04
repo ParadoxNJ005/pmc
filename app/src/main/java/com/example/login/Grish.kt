@@ -47,7 +47,7 @@ class Toolnav : AppCompatActivity(), NavigationView.OnNavigationItemSelectedList
         binding.bottomNavigation.background = null
         binding.bottomNavigation.setOnItemSelectedListener { item->
             when(item.itemId){
-                R.id.BOTTOM_Home-> openFragment(Home_fragment())
+                R.id.BOTTOM_Home-> openFragment(Homefragment())
                 R.id.BOTTOM_Profile-> openFragment(Profile_fragment())
                 R.id.BOTTOM_Message-> openFragment(Message_fragment())
                 R.id.BOTTOM_Quiz-> openFragment(Notification_fragment())
@@ -56,7 +56,7 @@ class Toolnav : AppCompatActivity(), NavigationView.OnNavigationItemSelectedList
             true
         }
         fragmentManager = supportFragmentManager
-        openFragment(Home_fragment())
+        openFragment(Homefragment())
 
     }
 
