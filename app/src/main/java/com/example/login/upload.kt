@@ -13,7 +13,7 @@ class upload : AppCompatActivity() {
     private lateinit var nameinput: EditText
     private lateinit var cityinput: EditText
     private lateinit var numberinput: EditText
-    private lateinit var emailinput: EditText
+
     private lateinit var bio: EditText
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,7 +27,7 @@ class upload : AppCompatActivity() {
         nameinput = findViewById(R.id.nameinput)
         cityinput = findViewById(R.id.cityinput)
         numberinput = findViewById(R.id.numberinput)
-        emailinput = findViewById(R.id.emailinput)
+
         bio = findViewById(R.id.bio)
 
         val pet = pet_name.editableText.toString()
@@ -37,7 +37,7 @@ class upload : AppCompatActivity() {
         val name = nameinput.editableText.toString()
         val city = cityinput.editableText.toString()
         val num = numberinput.editableText.toString()
-        val email = emailinput.editableText.toString()
+
         val bio = bio.editableText.toString()
 
         val intent = Intent(this, Profile_fragment::class.java)
@@ -48,7 +48,7 @@ class upload : AppCompatActivity() {
         intent.putExtra(Profile_fragment.NAME_KEY, name)
         intent.putExtra(Profile_fragment.CITY_KEY, city)
         intent.putExtra(Profile_fragment.NUMBER_KEY, num)
-        intent.putExtra(Profile_fragment.EMAIL_KEY, email)
+
         intent.putExtra(Profile_fragment.BIO_KEY, bio)
         startActivity(intent)
 

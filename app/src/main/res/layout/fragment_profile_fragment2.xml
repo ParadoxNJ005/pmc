@@ -7,15 +7,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
+
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="215dp"
+            android:layout_height="206dp"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/backimage1"
-            tools:layout_editor_absoluteX="-9dp" />
+            app:srcCompat="@drawable/petimage1" />
 
         <ImageView
             android:layout_width="120dp"
@@ -42,6 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
+
             android:orientation="vertical"
             app:layout_constraintTop_toBottomOf="@id/imageView"
             tools:layout_editor_absoluteX="16dp">
@@ -69,7 +71,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="PET NAME"
-                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+                app:layout_constraintTop_toBottomOf="@+id/imageView"
+                />
 
 
             <com.google.android.material.textfield.TextInputLayout
@@ -226,21 +229,7 @@
                     android:inputType="text" />
             </com.google.android.material.textfield.TextInputLayout>
 
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="8dp">
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/emailTextView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-
-                    android:drawableLeft="@drawable/corner"
-                    android:drawablePadding="8dp"
-                    android:inputType="text" />
-            </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
                 android:id="@+id/textView7"
@@ -266,8 +255,9 @@
             </com.google.android.material.textfield.TextInputLayout>
 
 
-        </LinearLayout>
 
+
+        </LinearLayout>
 
 
 

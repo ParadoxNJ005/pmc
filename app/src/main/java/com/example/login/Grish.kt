@@ -51,6 +51,7 @@ class Toolnav : AppCompatActivity(), NavigationView.OnNavigationItemSelectedList
                 R.id.BOTTOM_Profile-> openFragment(Profile_fragment())
                 R.id.BOTTOM_Message-> openFragment(Message_fragment())
                 R.id.BOTTOM_Quiz-> openFragment(Notification_fragment())
+                R.id.BOTTOM_Upload-> openFragment(Upload_fragment())
 
             }
             true
