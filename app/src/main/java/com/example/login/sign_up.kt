@@ -1,5 +1,6 @@
 package com.example.login
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -67,6 +68,8 @@ class Signup : AppCompatActivity() {
 
             if(it.isSuccessful){
                 Toast.makeText(this, "Successfully Singed Up", Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, upload::class.java)
+                startActivity(intent)
                 finish()
             }else{
                 Toast.makeText(this,"Singed up Failed",Toast.LENGTH_SHORT).show()

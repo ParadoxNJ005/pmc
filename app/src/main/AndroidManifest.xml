@@ -2,25 +2,23 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.Login"
         tools:targetApi="31">
+        <!-- Add your activities here -->
         <activity
             android:name=".p3"
             android:exported="false" />
         <activity
             android:name=".p2"
             android:exported="false" />
-
         <activity
             android:name=".Toolnav"
             android:exported="false" />
@@ -63,9 +61,6 @@
         <activity
             android:name=".quiz"
             android:exported="false" />
-        <!--        <activity-->
-        <!--            android:name=".Imageswipe"-->
-        <!--            android:exported="false" />-->
         <activity
             android:name=".upload"
             android:exported="false" />
@@ -74,20 +69,23 @@
             android:exported="false" />
         <activity
             android:name=".Sign_in"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".P1"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".activity.MainActivity"
             android:exported="false" />
+        <!-- Add the following meta-data for the Google Mobile Ads SDK -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="YOUR_ADMOB_APP_ID" />
     </application>
 
 </manifest>
