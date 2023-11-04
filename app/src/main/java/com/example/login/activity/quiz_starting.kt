@@ -1,9 +1,10 @@
-package com.example.login
+package com.example.login.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import com.example.login.R
 import com.example.login.classes.Ques_1
 
 class quiz : AppCompatActivity() {

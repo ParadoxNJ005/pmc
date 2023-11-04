@@ -1,4 +1,4 @@
-package com.example.login
+package com.example.login.fragment
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,7 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import com.example.login.activity.MainActivity
+import com.example.login.R
 import com.example.login.classes.Ques_1
 
 class Notification_fragment : Fragment() {

@@ -1,4 +1,4 @@
-package com.example.login
+package com.example.login.fragment
 
 import android.os.Bundle
 import android.util.Log
@@ -8,6 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.recyclerview.widget.DefaultItemAnimator
+import com.example.login.adapter.DatingAdapter
+import com.example.login.data_class.UserModelClass
 import com.example.login.databinding.FragmentHomeFragmentBinding
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError

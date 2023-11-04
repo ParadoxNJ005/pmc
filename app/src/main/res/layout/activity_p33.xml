@@ -4,15 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.MainActivity">
+    tools:context=".activity.p33">
 
     <ImageButton
-        android:id="@+id/Initialbutton"
+        android:id="@+id/thirdbutton"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/d8"
-        android:scaleType="centerCrop"
-        />
+        android:src="@drawable/d10"
+        android:scaleType="centerCrop"/>
 
     <TextView
         android:id="@+id/i"
@@ -23,9 +22,9 @@
         android:textColor="@color/white"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/Initialbutton"
+        app:layout_constraintBottom_toBottomOf="@+id/thirdbutton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/Initialbutton"
+        app:layout_constraintStart_toStartOf="@+id/thirdbutton"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.74" />
 
@@ -34,13 +33,13 @@
         android:layout_width="291dp"
         android:layout_height="81dp"
         android:gravity="center"
-        android:text="Rent Happiness at your Doorsteps"
+        android:text="Adopt and Help Petss"
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/Initialbutton"
+        app:layout_constraintBottom_toBottomOf="@+id/thirdbutton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/Initialbutton"
+        app:layout_constraintStart_toStartOf="@+id/thirdbutton"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.9" />
 

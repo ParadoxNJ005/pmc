@@ -1,4 +1,4 @@
-package com.example.login
+package com.example.login.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.login.databinding.ItemUserLayoutBinding
 import com.bumptech.glide.Glide // Added import
+import com.example.login.data_class.UserModelClass
 
 class DatingAdapter(val context : Context, val list : ArrayList<UserModelClass>) : RecyclerView.Adapter<DatingAdapter.DatingViewHolder>(){
     inner class  DatingViewHolder(val binding : ItemUserLayoutBinding)

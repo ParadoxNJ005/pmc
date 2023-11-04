@@ -1,4 +1,4 @@
-package com.example.login
+package com.example.login.data_class
 data class UserModelClass(
     val breed_name : String? = "",
     val pet_name : String? =  "",

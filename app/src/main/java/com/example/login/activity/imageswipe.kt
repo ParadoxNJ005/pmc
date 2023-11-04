@@ -4,13 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.login.R
 
-class MainActivity : AppCompatActivity() {
+class Imageswipe : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-    }
-
-    companion object {
-        val percent: Int = 0
+        setContentView(R.layout.activity_imageswipe)
     }
 }

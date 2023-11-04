@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:backgroundTint="@color/white"
-    tools:context=".Notification_fragment" >
+    tools:context=".fragment.Notification_fragment" >
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/pre"

@@ -1,4 +1,4 @@
-package com.example.login
+package com.example.login.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,10 +7,11 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.google.android.ads.mediationtestsuite.activities.HomeActivity
+import com.example.login.R
+import com.example.login.fragment.Homefragment
 import com.google.firebase.auth.FirebaseAuth
 
-class Sign_in : AppCompatActivity() {
+class sign_in : AppCompatActivity() {
 
     private lateinit var tvredirectsignup: TextView
     private lateinit var etpass: EditText
@@ -38,7 +39,7 @@ class Sign_in : AppCompatActivity() {
         }
 
         tvredirectsignup.setOnClickListener {
-            val intent = Intent(this, Signup::class.java)
+            val intent = Intent(this, sign_up::class.java)
             startActivity(intent)
             //using finish() to end the activity
             finish()
@@ -55,7 +56,7 @@ class Sign_in : AppCompatActivity() {
         auth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(this) { task ->
             if (task.isSuccessful) {
                 Toast.makeText(this, "Successfully LoggedIn", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this, HomeActivity::class.java)
+                val intent = Intent(this, Homefragment::class.java)
                 startActivity(intent)
                 finish() // Optional: Finish the current activity to prevent going back to the login screen
             } else {

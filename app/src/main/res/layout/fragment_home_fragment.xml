@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Homefragment">
+    tools:context=".fragment.Homefragment">
 
     <com.yuyakaido.android.cardstackview.CardStackView
         android:layout_width="match_parent"

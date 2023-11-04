@@ -1,10 +1,11 @@
-package com.example.login
+package com.example.login.fragment
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.login.R
 
 
 class Settings_fragment : Fragment() {

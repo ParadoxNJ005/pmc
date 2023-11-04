@@ -4,14 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.MainActivity">
+    tools:context=".activity.p11">
 
     <ImageButton
-        android:id="@+id/secondbutton"
+        android:id="@+id/Initialbutton"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/d9"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop"
+        android:src="@drawable/d8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/i"
@@ -19,12 +21,13 @@
         android:layout_height="81dp"
         android:gravity="center"
         android:text="Pet Rental"
+        android:fontFamily="@font/myfont1"
         android:textColor="@color/white"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/secondbutton"
+        app:layout_constraintBottom_toBottomOf="@+id/Initialbutton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/secondbutton"
+        app:layout_constraintStart_toStartOf="@+id/Initialbutton"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.74" />
 
@@ -33,15 +36,15 @@
         android:layout_width="291dp"
         android:layout_height="81dp"
         android:gravity="center"
-        android:text="Find pets nearby your locality"
+        android:text="Rent Happiness at your Doorsteps"
         android:textColor="@color/white"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/secondbutton"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:fontFamily="@font/myfont1"
+        app:layout_constraintBottom_toBottomOf="@+id/Initialbutton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/secondbutton"
+        app:layout_constraintStart_toStartOf="@+id/Initialbutton"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.9" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

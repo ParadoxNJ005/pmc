@@ -1,18 +1,17 @@
-package com.example.login
+package com.example.login.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
-import com.example.login.databinding.ActivitySignInBinding
+import com.example.login.R
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.auth
 
-class Signup : AppCompatActivity() {
+class sign_up : AppCompatActivity() {
 
     lateinit var etEmail: EditText
     lateinit var etConfPass: EditText

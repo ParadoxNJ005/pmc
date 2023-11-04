@@ -1,4 +1,4 @@
-package com.example.login
+package com.example.login.fragment
 
 import android.app.Activity.RESULT_OK
 import android.content.Intent
@@ -11,9 +11,9 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import androidx.activity.result.contract.ActivityResultContracts
+import com.example.login.R
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
-import com.google.firebase.storage.UploadTask
 
 class Upload_fragment : Fragment() {
 
