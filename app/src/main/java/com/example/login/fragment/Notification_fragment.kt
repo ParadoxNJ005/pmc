@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import com.example.login.R
+import com.example.login.activity.homeScreen
 import com.example.login.classes.Ques_1
 
 class Notification_fragment : Fragment() {
@@ -25,7 +26,7 @@ class Notification_fragment : Fragment() {
         // Set an OnClickListener for the startButton
         startButton.setOnClickListener {
             val intent = Intent(activity, Ques_1::class.java)
-            intent.putExtra("percent", MainActivity.percent) // Access the percent value from your companion object
+//            intent.putExtra("percent", homeScreen.percent) // Access the percent value from your companion object
             startActivity(intent)
         }
 
