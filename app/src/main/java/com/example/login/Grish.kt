@@ -65,7 +65,9 @@ class Toolnav : AppCompatActivity(), NavigationView.OnNavigationItemSelectedList
         when(item.itemId){
             R.id.nav_prime-> openFragment(Prime_fragment())
             R.id.nav_settings-> openFragment(Settings_fragment())
+            R.id.nav_adopt-> openFragment(Adopt_page())
             R.id.nav_logout-> openFragment(Logout_fragment())
+            R.id.nav_RateUs-> openFragment(Rate())
         }
         binding.drawerLayout.closeDrawer(GravityCompat.START)
         return true
