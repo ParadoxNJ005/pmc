@@ -6,6 +6,7 @@ import android.widget.EditText
 import android.content.Intent
 
 class upload : AppCompatActivity() {
+    private lateinit var pet_name: EditText
     private lateinit var breed_name: EditText
     private lateinit var yrs: EditText
     private lateinit var gender: EditText
@@ -19,6 +20,7 @@ class upload : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_upload)
 
+        pet_name = findViewById(R.id.pet_name)
         breed_name = findViewById(R.id.breed_name)
         yrs = findViewById(R.id.yrs)
         gender = findViewById(R.id.gender)
@@ -28,7 +30,7 @@ class upload : AppCompatActivity() {
         emailinput = findViewById(R.id.emailinput)
         bio = findViewById(R.id.bio)
 
-
+        val pet = pet_name.editableText.toString()
         val breed = breed_name.editableText.toString()
         val age = yrs.editableText.toString()
         val gender = gender.editableText.toString()
@@ -39,6 +41,7 @@ class upload : AppCompatActivity() {
         val bio = bio.editableText.toString()
 
         val intent = Intent(this, Profile_fragment::class.java)
+        intent.putExtra(Profile_fragment.PET_KEY, pet)
         intent.putExtra(Profile_fragment.BREED_KEY, breed)
         intent.putExtra(Profile_fragment.AGE_KEY, age)
         intent.putExtra(Profile_fragment.GENDER_KEY, gender)

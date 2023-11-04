@@ -8,4 +8,5 @@
     <item name="numTextView" type="id" />
     <item name="bioTextView" type="id" />
     <item name="emailTextView" type="id" />
+    <item name="petTextView" type="id" />
 </resources>
