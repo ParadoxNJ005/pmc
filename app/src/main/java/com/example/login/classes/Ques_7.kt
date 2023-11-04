@@ -1,4 +1,4 @@
-package com.example.login
+package com.example.login.classes
 
 import android.content.Intent
 import android.graphics.Color
@@ -6,15 +6,16 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ProgressBar
+import com.example.login.R
 
-class Ques_5 : AppCompatActivity() {
+class Ques_7 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_ques5)
+        setContentView(R.layout.activity_ques7)
 
         val startButton: Button =findViewById(R.id.n2)
         startButton.setOnClickListener {
-            val intent= Intent(this, Ques_6::class.java)
+            val intent= Intent(this, Ques_8::class.java)
             startActivity(intent)
         }
 
@@ -23,7 +24,7 @@ class Ques_5 : AppCompatActivity() {
         val o3:Button=findViewById(R.id.q2o3)
         val o4:Button=findViewById(R.id.q2o4)
         val p: ProgressBar =findViewById(R.id.progress_bar)
-        p.progress=40
+        p.progress=60
 
         o1.setOnClickListener {
             o1.setBackgroundColor(Color.parseColor("#008000"))

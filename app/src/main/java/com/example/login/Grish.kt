@@ -3,7 +3,6 @@ package com.example.login
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
@@ -13,6 +12,10 @@ import com.example.login.databinding.ActivityMainBinding
 import com.google.android.material.navigation.NavigationView
 import androidx.appcompat.widget.Toolbar
 import androidx.drawerlayout.widget.DrawerLayout
+import com.example.login.fragment.Logout_fragment
+import com.example.login.fragment.Message_fragment
+import com.example.login.fragment.Prime_fragment
+import com.example.login.fragment.Profile_fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 

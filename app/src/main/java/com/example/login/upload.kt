@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
 import android.content.Intent
+import com.example.login.fragment.Profile_fragment
 
 class upload : AppCompatActivity() {
     private lateinit var pet_name: EditText
@@ -48,7 +49,6 @@ class upload : AppCompatActivity() {
         intent.putExtra(Profile_fragment.NAME_KEY, name)
         intent.putExtra(Profile_fragment.CITY_KEY, city)
         intent.putExtra(Profile_fragment.NUMBER_KEY, num)
-
         intent.putExtra(Profile_fragment.BIO_KEY, bio)
         startActivity(intent)
 

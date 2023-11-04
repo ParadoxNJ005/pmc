@@ -7,9 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import com.example.login.MainActivity
-import com.example.login.Ques_1
-import com.example.login.R
+import com.example.login.activity.MainActivity
+import com.example.login.classes.Ques_1
 
 class Notification_fragment : Fragment() {
 

@@ -33,34 +33,34 @@
             android:name=".Imageswipe"
             android:exported="false" />
         <activity
-            android:name=".Ques_10"
+            android:name=".classes.Ques_10"
             android:exported="false" />
         <activity
-            android:name=".Ques_9"
+            android:name=".classes.Ques_9"
             android:exported="false" />
         <activity
-            android:name=".Ques_8"
+            android:name=".classes.Ques_8"
             android:exported="false" />
         <activity
-            android:name=".Ques_7"
+            android:name=".classes.Ques_7"
             android:exported="false" />
         <activity
-            android:name=".Ques_6"
+            android:name=".classes.Ques_6"
             android:exported="false" />
         <activity
-            android:name=".Ques_5"
+            android:name=".classes.Ques_5"
             android:exported="false" />
         <activity
-            android:name=".Ques_4"
+            android:name=".classes.Ques_4"
             android:exported="false" />
         <activity
-            android:name=".Ques_3"
+            android:name=".classes.Ques_3"
             android:exported="false" />
         <activity
-            android:name=".Ques_2"
+            android:name=".classes.Ques_2"
             android:exported="false" />
         <activity
-            android:name=".Ques_1"
+            android:name=".classes.Ques_1"
             android:exported="false" />
         <activity
             android:name=".quiz"
@@ -84,7 +84,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:exported="false" />
     </application>
 

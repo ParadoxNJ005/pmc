@@ -1,4 +1,4 @@
-package com.example.login
+package com.example.login.fragment
 
 import android.app.Activity.RESULT_OK
 import android.content.Intent
@@ -7,10 +7,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.lifecycle.findViewTreeViewModelStoreOwner
+import com.example.login.R
 
 
 class Profile_fragment : Fragment() {

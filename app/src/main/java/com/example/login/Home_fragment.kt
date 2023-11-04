@@ -1,6 +1,5 @@
 package com.example.login
 
-import android.content.ContentValues.TAG
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -20,14 +19,12 @@ import com.yuyakaido.android.cardstackview.CardStackListener
 import com.yuyakaido.android.cardstackview.Direction
 
 
-
-
-
 class Homefragment : Fragment() {
 
-    private lateinit var databaseReference:DatabaseReference
-    private lateinit var binding : FragmentHomeFragmentBinding
-    private lateinit var manager : CardStackLayoutManager
+    private lateinit var databaseReference: DatabaseReference
+    private lateinit var binding: FragmentHomeFragmentBinding
+    private lateinit var manager: CardStackLayoutManager
+    private lateinit var listel: ArrayList<UserModelClass>
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -37,23 +34,21 @@ class Homefragment : Fragment() {
 
 
         databaseReference = FirebaseDatabase.getInstance().getReference("users")
-
-
         getData()
 //        return inflater.inflate(R.layout.fragment_home_fragment, container, false)
         return binding.root
     }
 
     private fun init() {
-        manager  = CardStackLayoutManager(requireContext(),object : CardStackListener{
+        manager = CardStackLayoutManager(requireContext(), object : CardStackListener {
             override fun onCardDragging(direction: Direction?, ratio: Float) {
                 TODO("Not yet implemented")
             }
 
             override fun onCardSwiped(direction: Direction?) {
 
-                if(manager.topPosition == list.size){
-                    Toast.makeText(requireContext(),"this is last card", Toast.LENGTH_SHORT).show()
+                if (manager.topPosition == list.size) {
+                    Toast.makeText(requireContext(), "this is last card", Toast.LENGTH_SHORT).show()
                 }
             }
 
@@ -74,6 +69,8 @@ class Homefragment : Fragment() {
             }
 
         })
+
+
         manager.setVisibleCount(3)
         manager.setTranslationInterval(0.6f)
         manager.setScaleInterval(0.8f)
@@ -81,18 +78,18 @@ class Homefragment : Fragment() {
         manager.setDirections(Direction.HORIZONTAL)
 
     }
-    private lateinit var list : ArrayList<UserModel>
 
-    private fun getData(){
+    private lateinit var list: ArrayList<UserModelClass>
+
+    private fun getData() {
         FirebaseDatabase.getInstance().getReference("users")
-            .addValueEventListener(object : ValueEventListener{
+            .addValueEventListener(object : ValueEventListener {
                 override fun onDataChange(snapshot: DataSnapshot) {
-                    Log.d("Shubh", "onDataChange: ${snapshot.toString()}")
-                    if(snapshot.exists()){
-                         list = arrayListof<UserModel>()
-                        for(data in snapshot.children){
-
-                            val model = data.getValue(UserModel::class.java)
+                    Log.d("SHUBH", "onDataChange: ${snapshot.toString()}")
+                    if (snapshot.exists()) {
+                        list = ArrayList<UserModelClass>()
+                        for (data in snapshot.children) {
+                            val model = data.getValue(UserModelClass::class.java)
                             list.add(model!!)
                         }
                         list.shuffle()
@@ -100,21 +97,17 @@ class Homefragment : Fragment() {
 
                         binding.cardStackView.layoutManager = manager
                         binding.cardStackView.itemAnimator = DefaultItemAnimator()
-                        binding.cardStackView.adapter = DatingAdapter(requireContext(),list)
+                        binding.cardStackView.adapter = DatingAdapter(requireContext(), list)
 
-                    }else{
-                        Toast.makeText(requireContext(),"Something went wrong", Toast.LENGTH_SHORT).show()
+                    } else {
+                        Toast.makeText(requireContext(), "Something went wrong", Toast.LENGTH_SHORT)
+                            .show()
                     }
-
-
                 }
 
                 override fun onCancelled(error: DatabaseError) {
                     Toast.makeText(requireContext(), error.message, Toast.LENGTH_SHORT).show()
                 }
-
             })
     }
-
-
 }
