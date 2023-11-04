@@ -50,10 +50,6 @@ class upload : AppCompatActivity() {
         intent.putExtra(Profile_fragment.CITY_KEY, city)
         intent.putExtra(Profile_fragment.NUMBER_KEY, num)
         intent.putExtra(Profile_fragment.BIO_KEY, bio)
-        startActivity(intent)
-
-
-
 
 
     }

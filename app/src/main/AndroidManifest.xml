@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -18,11 +20,7 @@
         <activity
             android:name=".p2"
             android:exported="false" />
-        <activity
-            android:name=".P1"
-            android:exported="false" /> <!-- <activity -->
-        <!-- android:name=".imageswipe" -->
-        <!-- android:exported="false" /> -->
+
         <activity
             android:name=".Toolnav"
             android:exported="false" />
@@ -65,9 +63,9 @@
         <activity
             android:name=".quiz"
             android:exported="false" />
-        <activity
-            android:name=".imageswipe"
-            android:exported="false" />
+        <!--        <activity-->
+        <!--            android:name=".Imageswipe"-->
+        <!--            android:exported="false" />-->
         <activity
             android:name=".upload"
             android:exported="false" />
@@ -75,13 +73,17 @@
             android:name=".Signup"
             android:exported="false" />
         <activity
-            android:name=".Signing"
-            android:exported="true">
+            android:name=".Sign_in"
+            android:exported="false"/>
+        <activity
+            android:name=".P1"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity
             android:name=".activity.MainActivity"

@@ -93,9 +93,6 @@ class Profile_fragment : Fragment() {
             upload_button.setImageURI(data?.data)
         }
 
-
-
-
         }
     }
 

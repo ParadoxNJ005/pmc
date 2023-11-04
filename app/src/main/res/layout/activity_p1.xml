@@ -6,12 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".activity.MainActivity">
 
-    <ImageView
-        android:id="@+id/ImageView"
+    <ImageButton
+        android:id="@+id/Initialbutton"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/d8"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop"
+        />
 
     <TextView
         android:id="@+id/i"
@@ -22,9 +23,9 @@
         android:textColor="@color/white"
         android:textSize="50sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/ImageView"
+        app:layout_constraintBottom_toBottomOf="@+id/Initialbutton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/ImageView"
+        app:layout_constraintStart_toStartOf="@+id/Initialbutton"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.74" />
 
@@ -37,9 +38,9 @@
         android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/ImageView"
+        app:layout_constraintBottom_toBottomOf="@+id/Initialbutton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/ImageView"
+        app:layout_constraintStart_toStartOf="@+id/Initialbutton"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.9" />
 

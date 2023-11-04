@@ -9,7 +9,7 @@ import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 
-class Signing : AppCompatActivity() {
+class Sign_in : AppCompatActivity() {
 
     private lateinit var tvredirectsignup: TextView
     private lateinit var etpass: EditText
