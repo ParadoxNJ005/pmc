@@ -8,7 +8,7 @@
 
     <ImageButton
         android:id="@+id/Initialbutton"
-        android:layout_width="match_parent"
+        android:layout_width="500dp"
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         android:src="@drawable/d8"

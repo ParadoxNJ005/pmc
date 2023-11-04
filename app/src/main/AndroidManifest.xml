@@ -18,23 +18,21 @@
         <activity
             android:name=".activity.p22"
             android:exported="false" />
+        <!-- Add your activities here -->
+<!--        <activity-->
+<!--            android:name=".p3"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".p2"-->
+<!--            android:exported="false" />-->
         <activity
-            android:name=".activity.p11"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity><!-- Add your activities here -->
-        <activity
-            android:name=".activity.homeScreen"
+            android:name=".Toolnav"
             android:exported="false" />
         <activity
             android:name=".test"
             android:exported="false" />
         <activity
-            android:name=".activity.Imageswipe"
+            android:name=".Imageswipe"
             android:exported="false" />
         <activity
             android:name=".classes.Ques_10"
@@ -67,20 +65,33 @@
             android:name=".classes.Ques_1"
             android:exported="false" />
         <activity
-            android:name=".activity.quiz"
+            android:name=".quiz"
             android:exported="false" />
         <activity
-            android:name=".activity.upload"
+            android:name=".upload"
             android:exported="false" />
         <activity
-            android:name=".activity.sign_up"
+            android:name=".Signup"
             android:exported="false" />
         <activity
-            android:name=".activity.sign_in"
+            android:name=".Sign_in"
             android:exported="false" />
+        <activity
+            android:name=".P1"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".activity.MainActivity"
             android:exported="false" />
+        <!-- Add the following meta-data for the Google Mobile Ads SDK -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="YOUR_ADMOB_APP_ID" />
     </application>
 
 </manifest>

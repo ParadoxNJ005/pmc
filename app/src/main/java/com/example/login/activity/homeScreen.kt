@@ -8,7 +8,7 @@ import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
-import com.example.login.databinding.ActivityMainBinding
+import com.example.login.databinding.ActivityGrishBinding
 import com.google.android.material.navigation.NavigationView
 import androidx.appcompat.widget.Toolbar
 import androidx.drawerlayout.widget.DrawerLayout
@@ -24,26 +24,26 @@ import com.example.login.fragment.Upload_fragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
-val ActivityMainBinding.toolbar: Toolbar
+val ActivityGrishBinding.toolbar: Toolbar
     get() = this.toolbar
 
 // Extension property for DrawerLayout
-val ActivityMainBinding.drawerLayout: DrawerLayout
+val ActivityGrishBinding.drawerLayout: DrawerLayout
     get() = this.drawerLayout
-val ActivityMainBinding.bottomNavigation: BottomNavigationView
+val ActivityGrishBinding.bottomNavigation: BottomNavigationView
     get() = this.bottomNavigation
 
 // Extension property for NavigationView
-val ActivityMainBinding.navigationDrawer: NavigationView
+val ActivityGrishBinding.navigationDrawer: NavigationView
     get() = this.navigationDrawer
 
 class homeScreen : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
     private lateinit var fragmentManager: FragmentManager
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityGrishBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding=ActivityMainBinding.inflate(layoutInflater)
+        binding=ActivityGrishBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setSupportActionBar(binding.toolbar)
         val toggle=ActionBarDrawerToggle(this,binding.drawerLayout,binding.toolbar,

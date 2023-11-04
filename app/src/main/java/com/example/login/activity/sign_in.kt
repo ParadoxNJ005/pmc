@@ -50,13 +50,10 @@ class sign_in : AppCompatActivity() {
         val email = etEmail.text.toString()
         val pass = etpass.text.toString()
 
-        //calling signInWithEmailAndPassword(email,pass)
-        //function using firebase auth object
-        //on successful response display a toast
         auth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(this) { task ->
             if (task.isSuccessful) {
                 Toast.makeText(this, "Successfully LoggedIn", Toast.LENGTH_SHORT).show()
-                val intent = Intent(this, Homefragment::class.java)
+                val intent = Intent(this, homeScreen::class.java)
                 startActivity(intent)
                 finish() // Optional: Finish the current activity to prevent going back to the login screen
             } else {

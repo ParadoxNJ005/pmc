@@ -8,10 +8,12 @@
 
     <ImageButton
         android:id="@+id/thirdbutton"
+        android:layout_marginTop="-10dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="800dp"
+        android:scaleType="centerCrop"
         android:src="@drawable/d10"
-        android:scaleType="centerCrop"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/i"

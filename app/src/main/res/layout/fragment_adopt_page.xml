@@ -14,14 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="185dp">
 
-            <com.airbnb.lottie.LottieAnimationView
-                android:id="@+id/pre"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:lottie_autoPlay="true"
-                app:lottie_loop="true"
-                app:lottie_rawRes="@raw/adopt"
-                tools:layout_editor_absoluteX="0dp" />
+
 
             <ImageView
                 android:id="@+id/imageView"
@@ -55,6 +48,16 @@
                 android:textAllCaps="true"
                 android:textColor="#FFFFFF" />
 
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/pre"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginLeft="259dp"
+                android:layout_marginTop="35dp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/adopt"
+                tools:layout_editor_absoluteX="0dp" />
 
 
         </FrameLayout>

@@ -9,7 +9,6 @@ import com.example.login.R
 
 class Logout_fragment : Fragment() {
 
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
