@@ -6,15 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".activity.MainActivity">
 
-
+    <ImageView
+        android:id="@+id/userImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/placeholder_image" />
 
     <Button
         android:id="@+id/upload_img"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="upload"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="500dp"
+        android:text="Upload" />
 </FrameLayout>

@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#E0E0E0" /> <!-- Set the desired color for the placeholder background -->
+    <size android:width="200dp" android:height="200dp" /> <!-- Set the desired width and height for the placeholder -->
+</shape>

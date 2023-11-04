@@ -7,6 +7,7 @@ import android.content.Intent
 import com.example.login.fragment.Profile_fragment
 
 class upload : AppCompatActivity() {
+
     private lateinit var pet_name: EditText
     private lateinit var breed_name: EditText
     private lateinit var yrs: EditText
@@ -19,7 +20,6 @@ class upload : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_upload)
 
         pet_name = findViewById(R.id.pet_name)
         breed_name = findViewById(R.id.breed_name)
@@ -51,6 +51,10 @@ class upload : AppCompatActivity() {
         intent.putExtra(Profile_fragment.NUMBER_KEY, num)
         intent.putExtra(Profile_fragment.BIO_KEY, bio)
         startActivity(intent)
+
+
+
+
 
     }
 }
