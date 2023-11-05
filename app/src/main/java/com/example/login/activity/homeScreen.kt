@@ -21,6 +21,7 @@ import com.example.login.fragment.Prime_fragment
 import com.example.login.fragment.Profile_fragment
 import com.example.login.fragment.Settings_fragment
 import com.example.login.fragment.Upload_fragment
+import com.example.login.fragment.test
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
@@ -62,6 +63,7 @@ class homeScreen : AppCompatActivity(), NavigationView.OnNavigationItemSelectedL
                 R.id.BOTTOM_Profile -> openFragment(Profile_fragment())
                 R.id.nav_adopt -> openFragment(Adopt_page())
                 R.id.BOTTOM_Upload -> openFragment(Upload_fragment())
+                R.id.BOTTOM -> openFragment(test())
 
             }
             true
