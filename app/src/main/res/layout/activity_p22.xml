@@ -9,10 +9,13 @@
     <ImageButton
         android:id="@+id/secondbutton"
         android:layout_width="match_parent"
-        android:layout_height="800dp"
+        android:layout_height="match_parent"
+            android:layout_marginTop="-12dp"
+        android:layout_marginBottom="-12dp"
         android:scaleType="centerCrop"
-        android:layout_marginTop="-10dp"
         android:src="@drawable/d9"
+
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView

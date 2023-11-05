@@ -16,7 +16,7 @@ import com.example.login.R
 import com.example.login.fragment.Homefragment
 import com.example.login.fragment.Logout_fragment
 import com.example.login.fragment.Message_fragment
-import com.example.login.fragment.Notification_fragment
+
 import com.example.login.fragment.Prime_fragment
 import com.example.login.fragment.Profile_fragment
 import com.example.login.fragment.Settings_fragment
@@ -60,8 +60,7 @@ class homeScreen : AppCompatActivity(), NavigationView.OnNavigationItemSelectedL
             when(item.itemId){
                 R.id.BOTTOM_Home -> openFragment(Homefragment())
                 R.id.BOTTOM_Profile -> openFragment(Profile_fragment())
-                R.id.BOTTOM_Message -> openFragment(Message_fragment())
-                R.id.BOTTOM_Quiz -> openFragment(Notification_fragment())
+                R.id.nav_adopt -> openFragment(Adopt_page())
                 R.id.BOTTOM_Upload -> openFragment(Upload_fragment())
 
             }
@@ -75,10 +74,11 @@ class homeScreen : AppCompatActivity(), NavigationView.OnNavigationItemSelectedL
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
 
         when(item.itemId){
-            R.id.nav_prime -> openFragment(Prime_fragment())
-            R.id.nav_settings -> openFragment(Settings_fragment())
+
+
             R.id.nav_adopt -> openFragment(Adopt_page())
             R.id.nav_logout -> openFragment(Logout_fragment())
+
             R.id.nav_RateUs -> openFragment(Rate())
         }
         binding.drawerLayout.closeDrawer(GravityCompat.START)

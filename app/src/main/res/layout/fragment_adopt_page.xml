@@ -8,7 +8,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        >
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -18,7 +20,8 @@
 
             <ImageView
                 android:id="@+id/imageView"
-                android:layout_width="match_parent"
+                android:layout_width="370dp"
+                android:layout_marginLeft="15dp"
                 android:layout_height="150dp"
                 android:layout_marginTop="24dp"
                 android:src="@drawable/rectangle" />
@@ -29,6 +32,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="40dp"
                 android:layout_marginTop="10dp"
+                android:layout_marginLeft="13dp"
                 android:gravity="center_horizontal"
                 android:text="You can't change an animal's past but you can rewrite its future"
                 android:textColor="#FFFFFF"
@@ -42,7 +46,7 @@
                 android:layout_marginVertical="120dp"
                 android:textSize="18dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginRight="82dp"
+                android:layout_marginRight="80dp"
                 android:layout_marginBottom="40dp"
                 android:text="Adopt Now"
                 android:textAllCaps="true"
@@ -316,5 +320,8 @@
 
 
     </androidx.cardview.widget.CardView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"/>
     </LinearLayout>
 </ScrollView>

@@ -11,6 +11,7 @@
         android:layout_marginTop="-10dp"
         android:layout_width="match_parent"
         android:layout_height="800dp"
+        android:layout_marginBottom="0dp"
         android:scaleType="centerCrop"
         android:src="@drawable/d10"
         app:layout_constraintTop_toTopOf="parent" />
